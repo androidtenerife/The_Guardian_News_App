@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_article"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/content_margin"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/title_of_news"
+                android:textSize="@dimen/content_title"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/content_margin"
+                android:text="@string/section_of_the_news"
+                android:textAlignment="textEnd" />
+
+            <TextView
+                android:id="@+id/tvDateOfPublished"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/content_margin"
+                android:text="@string/date_of_published" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="128dp">
+
+                <ImageView
+                    android:id="@+id/ivNotice"
+                    android:layout_width="130dp"
+                    android:layout_height="92dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="@dimen/content_margin"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="@dimen/content_margin"
+                    android:layout_marginBottom="@dimen/content_margin"
+                    app:srcCompat="@mipmap/ic_launcher_round"
+                    android:contentDescription="@string/image_notice" />
+
+                <TextView
+                    android:id="@+id/tvTextAdvanceNotice"
+                    android:layout_width="222dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/ivNotice"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="@dimen/content_margin"
+                    android:layout_marginEnd="@dimen/content_margin"
+                    android:layout_toEndOf="@+id/ivNotice"
+                    android:text="@string/news_advance" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvAuthor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/content_margin"
+                android:text="@string/author" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

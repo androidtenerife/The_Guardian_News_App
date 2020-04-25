@@ -9,13 +9,41 @@
             android:icon="@drawable/icon_home"
             android:title="@string/menu_home" />
         <item
+            android:id="@+id/nav_worldFragment"
+            android:icon="@drawable/icon_world"
+            android:title="@string/world"
+            />
+        <item
+            android:id="@+id/nav_scienceFragment"
+            android:icon="@drawable/icon_science"
+            android:title="@string/science"
+            />
+        <item
             android:id="@+id/nav_sports"
             android:icon="@drawable/icon_sports"
             android:title="@string/sports"
             />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
+            android:id="@+id/nav_environFragment"
+            android:icon="@drawable/icon_environment"
+            android:title="@string/environment" />
+        <item
+            android:id="@+id/nav_societyFragment"
+            android:icon="@drawable/icon_society"
+            android:title="@string/society"
+            />
+        <item
+            android:id="@+id/nav_fashionFragment"
+            android:icon="@drawable/icon_fashion"
+            android:title="@string/fashion" />
+        <item
+        android:id="@+id/nav_businessFragment"
+        android:icon="@drawable/icon_business"
+        android:title="@string/business"
+        />
+        <item
+            android:id="@+id/nav_cultureFragment"
+            android:icon="@drawable/icon_culture"
+            android:title="@string/culture" />
     </group>
 </menu>
