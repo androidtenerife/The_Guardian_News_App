@@ -21,6 +21,7 @@
                 android:layout_margin="@dimen/content_margin"
                 android:fontFamily="sans-serif-light"
                 android:text="@string/title_of_news"
+                android:textColor="@color/colorPrimaryDark"
                 android:textSize="@dimen/content_title"
                 android:textStyle="bold" />
 
@@ -30,7 +31,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/content_margin"
                 android:text="@string/section_of_the_news"
-                android:textAlignment="textEnd" />
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorPrimary" />
 
             <TextView
                 android:id="@+id/tvDateOfPublished"
@@ -75,7 +77,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/content_margin"
-                android:text="@string/author" />
+                android:text="@string/author"
+                android:textColor="@color/primary_text" />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
