@@ -77,36 +77,21 @@ public class ArticleFragment extends Fragment implements LoaderManager.LoaderCal
 
     @Override
     public void onLoadFinished(@NonNull Loader<List<News>> loader, List<News> newsData) {
-        // Hide loading indicator because the data has been loaded
         mLoadingIndicator.setVisibility(View.GONE);
-
-        // Set empty state text to display "No news found."
         mEmptyStateTextView.setText(R.string.no_news);
-
-        // Clear the adapter of previous news data
         mAdapter.clearAll();
-
-        // If there is a valid list of {@link News}, then add them to the adapter's
-        // data set. This will trigger the recyclerView to update.
-       //TODO ATTENTION THIS LINES
         if (newsData != null && !newsData.isEmpty()) {
            mAdapter.addAll(newsData);
         }
 
-        // Hide the swipe icon animation when the loader is done refreshing the data
         mSwipeRefreshLayout.setRefreshing(false);
     }
 
     @Override
     public void onLoaderReset(@NonNull Loader loader) {
-        // Loader reset, so we can clear out our existing data.
         mAdapter.clearAll();
     }
 
-    /**
-     * When the user returns to the previous screen by pressing the up button in the SettingsActivity,
-     * restart the Loader to reflect the current value of the preference.
-     */
     @Override
     public void onResume() {
         super.onResume();
@@ -131,10 +116,6 @@ public class ArticleFragment extends Fragment implements LoaderManager.LoaderCal
         }
     }
 
-    /**
-     * Restart the loader if there is internet connectivity.
-     * @param isConnected internet connection is available or not
-     */
     private void restartLoader(boolean isConnected) {
         if (isConnected) {
             LoaderManager loaderManager = getLoaderManager();

@@ -15,7 +15,7 @@
     <string name="home_second">Home Second</string>
     <string name="developer">Developer</string>
     <string name="herbert_daniel_rodriguez">info@chaacho.com</string>
-    <string name="sports">Sports</string>
+    <string name="sports">Sport</string>
     <string name="world">World</string>
     <string name="science">Science</string>
     <string name="environment">Environment</string>
@@ -32,4 +32,7 @@
     <string name="without_conn">Verify the Internet connection</string>
     <string name="updated_just_now">Updated !</string>
     <string name="no_news">No News</string>
+    <string name="worldfragment">world</string>
+    <string name="sports_fragm">sport</string>
+    <string name="science_frag">Science</string>
 </resources>

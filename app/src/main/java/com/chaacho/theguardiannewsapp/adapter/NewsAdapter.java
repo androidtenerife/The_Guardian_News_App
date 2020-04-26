@@ -62,7 +62,6 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ViewHolder> {
         private TextView authorTextView;
         private TextView dateTextView;
         private ImageView thumbnailImageView;
-        private ImageView shareImageView;
         private TextView trailTextView;
         private CardView cardView;
 
@@ -97,7 +96,8 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ViewHolder> {
         if(currentNews.getNewsDate()==null) {
             holder.dateTextView.setVisibility(View.INVISIBLE);
         }else{
-            holder.dateTextView.setText(getTimeDifference(formatDate(currentNews.getNewsDate())));
+          //  holder.dateTextView.setText(getTimeDifference(formatDate(currentNews.getNewsDate())));
+            holder.dateTextView.setText(currentNews.getNewsDate().substring(0,10));
 
         }
         String trailTextHTML = currentNews.getNewsTrailTextHtml();

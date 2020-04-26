@@ -31,8 +31,9 @@ public class RequestNews {
             // TODO ERASE THE LOG THIS
             Log.e(LOG_TAG, "Problem making the HTTP request.", e);
         }
-
-        List<News> newsList = extractFeatureFromJSON(jsonResponse);
+        //TODO ELIMINAR ESTO...
+        Log.i("TAG_JSON",jsonResponse);
+        List<News> newsList = extractJSON(jsonResponse);
 
         return newsList;
     }
@@ -69,12 +70,9 @@ public class RequestNews {
                 inputStream = urlConnection.getInputStream();
                 jsonResponse = readFromStream(inputStream);
             } else {
-                //todo eraase this log
                 Log.e(LOG_TAG, "Error response code: " + urlConnection.getResponseCode());
             }
         } catch (IOException e) {
-            //todo eraase this log
-
             Log.e(LOG_TAG, "Problem retrieving the news JSON results.", e);
         } finally {
             if (urlConnection != null) {
@@ -100,7 +98,7 @@ public class RequestNews {
         }
         return output.toString();
     }
-    private static List<News> extractFeatureFromJSON(String newsJSON) {
+    private static List<News> extractJSON(String newsJSON) {
         if (TextUtils.isEmpty(newsJSON)) {
             return null;
         }
@@ -140,7 +138,6 @@ public class RequestNews {
                 newsList.add(news);
             }
         } catch (JSONException e) {
-//TODO BORRAR ESTE LOG
             Log.e(LOG_TAG, "Problem parsing the news JSON results", e);
         }
 
