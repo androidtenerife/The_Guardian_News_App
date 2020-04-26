@@ -28,11 +28,7 @@ public class RequestNews {
         try {
             jsonResponse = makeHttpRequest(url);
         } catch (IOException e) {
-            // TODO ERASE THE LOG THIS
-            Log.e(LOG_TAG, "Problem making the HTTP request.", e);
         }
-        //TODO ELIMINAR ESTO...
-        Log.i("TAG_JSON",jsonResponse);
         List<News> newsList = extractJSON(jsonResponse);
 
         return newsList;
@@ -43,8 +39,6 @@ public class RequestNews {
         try {
             url = new URL(stringUrl);
         } catch (MalformedURLException e) {
-//todo eliminate este log
-            Log.e(LOG_TAG, "Problem building the URL.", e);
         }
         return url;
     }
@@ -52,7 +46,6 @@ public class RequestNews {
     private static String makeHttpRequest(URL url) throws IOException {
         String jsonResponse = "";
 
-        // If the URL is null, then return early.
         if (url == null) {
             return jsonResponse;
         }
@@ -70,10 +63,8 @@ public class RequestNews {
                 inputStream = urlConnection.getInputStream();
                 jsonResponse = readFromStream(inputStream);
             } else {
-                Log.e(LOG_TAG, "Error response code: " + urlConnection.getResponseCode());
             }
         } catch (IOException e) {
-            Log.e(LOG_TAG, "Problem retrieving the news JSON results.", e);
         } finally {
             if (urlConnection != null) {
                 urlConnection.disconnect();
@@ -140,8 +131,6 @@ public class RequestNews {
         } catch (JSONException e) {
             Log.e(LOG_TAG, "Problem parsing the news JSON results", e);
         }
-
-        // Return the list of news
         return newsList;
     }
 }

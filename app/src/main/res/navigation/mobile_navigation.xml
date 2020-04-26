@@ -14,7 +14,7 @@
     <fragment
         android:id="@+id/nav_sports"
         android:name="com.chaacho.theguardiannewsapp.ui.SportsFragment"
-        android:label="@string/sports_fragm"
+        android:label="@string/sports"
         tools:layout="@layout/fragment_sports" />
     <fragment
         android:id="@+id/nav_worldFragment"
@@ -29,17 +29,17 @@
     <fragment
         android:id="@+id/nav_environFragment"
         android:name="com.chaacho.theguardiannewsapp.ui.EnvironmentFragment"
-        android:label="fragment_environment"
+        android:label="@string/environment"
         tools:layout="@layout/fragment_environment" />
     <fragment
         android:id="@+id/nav_societyFragment"
         android:name="com.chaacho.theguardiannewsapp.ui.SocietyFragment"
-        android:label="fragment_society"
+        android:label="@string/society"
         tools:layout="@layout/fragment_society" />
     <fragment
         android:id="@+id/nav_fashionFragment"
         android:name="com.chaacho.theguardiannewsapp.ui.FashionFragment"
-        android:label="fragment_fashion"
+        android:label="@string/fashion"
         tools:layout="@layout/fragment_fashion" />
     <fragment
         android:id="@+id/nav_businessFragment"
@@ -49,6 +49,6 @@
     <fragment
         android:id="@+id/nav_cultureFragment"
         android:name="com.chaacho.theguardiannewsapp.ui.CultureFragment"
-        android:label="fragment_culture"
+        android:label="@string/culture"
         tools:layout="@layout/fragment_culture" />
 </navigation>

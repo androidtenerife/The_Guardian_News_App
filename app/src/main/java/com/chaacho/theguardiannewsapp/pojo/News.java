@@ -8,7 +8,6 @@ public class News {
     private String newsDate;
     private String newsUrlBrouwser;
     private String newsThumbnail;
-    //TODO CAMBIAR ESTO POR OTRO NOMBRE
     private String newsTrailTextHtml;
 
     public News(String newsTitle, String newsSection, String newsAuthor, String newsDate, String newsUrlBrouwser, String newsThumbnail, String newsTrailTextHtml) {
