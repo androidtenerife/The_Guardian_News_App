@@ -1,4 +1,4 @@
-package com.chaacho.theguardiannewsapp;
+package com.chaacho.theguardiannewsapp.ui;
 
 import android.os.Bundle;
 
@@ -8,13 +8,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.chaacho.theguardiannewsapp.R;
+
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link FashionFragment#newInstance} factory method to
+ * Use the {@link BusinessFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class FashionFragment extends Fragment {
+public class BusinessFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -24,7 +26,7 @@ public class FashionFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public FashionFragment() {
+    public BusinessFragment() {
         // Required empty public constructor
     }
 
@@ -34,11 +36,11 @@ public class FashionFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment FashionFragment.
+     * @return A new instance of fragment BusinessFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static FashionFragment newInstance(String param1, String param2) {
-        FashionFragment fragment = new FashionFragment();
+    public static BusinessFragment newInstance(String param1, String param2) {
+        BusinessFragment fragment = new BusinessFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -59,6 +61,6 @@ public class FashionFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_fashion, container, false);
+        return inflater.inflate(R.layout.fragment_business, container, false);
     }
 }

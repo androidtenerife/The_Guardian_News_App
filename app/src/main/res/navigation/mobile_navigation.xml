@@ -13,42 +13,42 @@
 
     <fragment
         android:id="@+id/nav_sports"
-        android:name="com.chaacho.theguardiannewsapp.SportsFragment"
+        android:name="com.chaacho.theguardiannewsapp.ui.SportsFragment"
         android:label="fragment_sports"
         tools:layout="@layout/fragment_sports" />
     <fragment
         android:id="@+id/nav_worldFragment"
-        android:name="com.chaacho.theguardiannewsapp.WorldFragment"
+        android:name="com.chaacho.theguardiannewsapp.ui.WorldFragment"
         android:label="fragment_world"
         tools:layout="@layout/fragment_world" />
     <fragment
         android:id="@+id/nav_scienceFragment"
-        android:name="com.chaacho.theguardiannewsapp.ScienceFragment"
+        android:name="com.chaacho.theguardiannewsapp.ui.ScienceFragment"
         android:label="fragment_science"
         tools:layout="@layout/fragment_science" />
     <fragment
         android:id="@+id/nav_environFragment"
-        android:name="com.chaacho.theguardiannewsapp.EnvironmentFragment"
+        android:name="com.chaacho.theguardiannewsapp.ui.EnvironmentFragment"
         android:label="fragment_environment"
         tools:layout="@layout/fragment_environment" />
     <fragment
         android:id="@+id/nav_societyFragment"
-        android:name="com.chaacho.theguardiannewsapp.SocietyFragment"
+        android:name="com.chaacho.theguardiannewsapp.ui.SocietyFragment"
         android:label="fragment_society"
         tools:layout="@layout/fragment_society" />
     <fragment
         android:id="@+id/nav_fashionFragment"
-        android:name="com.chaacho.theguardiannewsapp.FashionFragment"
+        android:name="com.chaacho.theguardiannewsapp.ui.FashionFragment"
         android:label="fragment_fashion"
         tools:layout="@layout/fragment_fashion" />
     <fragment
         android:id="@+id/nav_businessFragment"
-        android:name="com.chaacho.theguardiannewsapp.BusinessFragment"
+        android:name="com.chaacho.theguardiannewsapp.ui.BusinessFragment"
         android:label="fragment_business"
         tools:layout="@layout/fragment_business" />
     <fragment
         android:id="@+id/nav_cultureFragment"
-        android:name="com.chaacho.theguardiannewsapp.CultureFragment"
+        android:name="com.chaacho.theguardiannewsapp.ui.CultureFragment"
         android:label="fragment_culture"
         tools:layout="@layout/fragment_culture" />
 </navigation>
