@@ -60,8 +60,8 @@ public class RequestNews {
         InputStream inputStream = null;
         try {
             urlConnection = (HttpURLConnection) url.openConnection();
-            urlConnection.setReadTimeout(Tools.READ_TIMEOUT /* milliseconds */);
-            urlConnection.setConnectTimeout(Tools.CONNECT_TIMEOUT /* milliseconds */);
+            urlConnection.setReadTimeout(Tools.READ_TIMEOUT);
+            urlConnection.setConnectTimeout(Tools.CONNECT_TIMEOUT);
             urlConnection.setRequestMethod(Tools.REQUEST_METHOD_GET);
             urlConnection.connect();
 

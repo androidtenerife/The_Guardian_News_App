@@ -47,14 +47,15 @@
 
                 <ImageView
                     android:id="@+id/ivNotice"
-                    android:layout_width="130dp"
-                    android:layout_height="92dp"
+                    android:layout_width="288dp"
+                    android:layout_height="192dp"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
-                    android:layout_margin="@dimen/content_margin"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="@dimen/content_margin"
+                    android:layout_marginLeft="@dimen/content_margin"
+                    android:layout_marginTop="@dimen/content_margin"
                     android:layout_marginEnd="@dimen/content_margin"
+                    android:layout_marginRight="@dimen/content_margin"
                     android:layout_marginBottom="@dimen/content_margin"
                     android:contentDescription="@string/image_notice"
                     app:srcCompat="@mipmap/ic_launcher_round" />
@@ -66,7 +67,7 @@
                     android:layout_alignTop="@+id/ivNotice"
                     android:layout_alignParentEnd="true"
                     android:layout_marginStart="@dimen/content_margin"
-                    android:layout_marginEnd="@dimen/content_margin"
+                    android:layout_marginEnd="67dp"
                     android:layout_toEndOf="@+id/ivNotice"
                     android:text="@string/news_advance" />
 

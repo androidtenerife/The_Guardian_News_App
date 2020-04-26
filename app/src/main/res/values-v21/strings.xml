@@ -30,4 +30,6 @@
     <string name="date_of_published">Date of published</string>
     <string name="section_of_the_news">Section of the News</string>
     <string name="without_conn">Verify the Internet connection</string>
+    <string name="updated_just_now">Updated !</string>
+    <string name="no_news">No News</string>
 </resources>
