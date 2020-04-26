@@ -1,18 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">The Guardian News App</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
     <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
-
-    <string name="home_second">Home Second</string>
     <string name="developer">Developer</string>
     <string name="herbert_daniel_rodriguez">info@chaacho.com</string>
     <string name="sports">Sport</string>
@@ -29,10 +21,8 @@
     <string name="image_notice">Image Notice</string>
     <string name="date_of_published">Date of published</string>
     <string name="section_of_the_news">Section of the News</string>
-    <string name="without_conn">Verify the Internet connection</string>
     <string name="updated_just_now">Updated !</string>
     <string name="no_news">No News</string>
     <string name="worldfragment">world</string>
-    <string name="sports_fragm">sport</string>
     <string name="science_frag">Science</string>
 </resources>
