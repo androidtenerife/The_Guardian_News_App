@@ -1,4 +1,4 @@
-# The_Guardian_News_App
+# The Guardian News App
 
 For this project, they asked to create an application that connect via API with the Paper The Guardian. It has been developed with support for screen rotation (Portait / Landscape) application with multiple screens, each of linked to one category ( Sports, Fashion, Culture, Society, World and more ).
 
